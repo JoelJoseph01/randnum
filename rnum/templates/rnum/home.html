@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<div class="container text-center">
+
+<h1 style="text-transform: uppercase; text-decoration: underline;">Random Num Generator</h1>
+<form action="{% url 'number' %}">
+    <br>
+    <select name="length">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6" selected="selected">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select> Length
+    <br>
+    <br>
+    <input type="submit" value="Generate Number" class="btn btn-primary">
+
+</form>
+</div>
